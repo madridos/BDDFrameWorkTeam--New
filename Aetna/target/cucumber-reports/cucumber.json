@@ -1,0 +1,45 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-20T01:01:39.333Z",
+        "line": 2,
+        "name": ": aetne home page",
+        "description": "",
+        "id": "aetna-home-page;:-aetne-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30726000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is landed in aetna home page",
+            "match": {
+              "location": "step_definitions.HomePgStepDefinitions.user_is_landed_in_aetna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user should be able to click on login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "aetna home page",
+    "description": "",
+    "id": "aetna-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/Login.feature",
+    "tags": []
+  }
+]
