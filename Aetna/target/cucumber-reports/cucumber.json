@@ -3,7 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T01:01:39.333Z",
+        "start_timestamp": "2020-06-20T19:20:34.879Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12979899000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePgStepDefinitions.openBrowser()"
+            }
+          }
+        ],
         "line": 2,
         "name": ": aetne home page",
         "description": "",
@@ -13,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30726000,
+              "duration": 4796000,
               "status": "passed"
             },
             "line": 5,
@@ -25,11 +36,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2859583000,
+              "status": "passed"
             },
             "line": 6,
             "name": "user should be able to click on login",
-            "match": {},
+            "match": {
+              "location": "step_definitions.HomePgStepDefinitions.user_should_be_able_to_click_on_login()"
+            },
             "keyword": "Then "
           }
         ]

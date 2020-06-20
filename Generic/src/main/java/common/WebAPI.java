@@ -2,8 +2,6 @@ package common;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,17 +15,17 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import org.junit.After;
+import org.junit.Before;
+
 
 public class WebAPI {
 
@@ -39,15 +37,16 @@ public class WebAPI {
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
+    @Before
+    public  void openBrowser() throws IOException {
+        setUp(false,"browserstack","os","x","chrome","83","https://www.aetna.com/");
 
-    public void cleanUp() {
-        //driver.close();
-        driver.quit();
     }
 
-    public void setUp(boolean useCloudEnv,  String cloudEnvName,
-                      String os, String os_version, String browserName,
-                      String browserVersion, String url) throws IOException {
+
+    public void setUp( boolean useCloudEnv,  String cloudEnvName,
+                       String os,  String os_version,  String browserName,
+                       String browserVersion,  String url) throws IOException {
 
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -64,34 +63,34 @@ public class WebAPI {
         //driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver(String OS, String browserName) {
+    public WebDriver getLocalDriver( String OS, String browserName) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "BrowserDriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "BrowserDriver/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "BrowserDriver\\windows\\chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("chrome-options")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "BrowserDriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "BrowserDriver/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.gecko.driver", "BrowserDriver/mac/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/mac/geckodriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "BrowserDriver/windows/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "../Generic/BrowserDriver/windows/geckodriver.exe");
             }
             driver = new FirefoxDriver();
 
         } else if (browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "BrowserDriver/windows/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "../Generic/BrowserDriver/windows/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         return driver;
@@ -117,7 +116,11 @@ public class WebAPI {
         return driver;
     }
 
-
+    @After
+    public void cleanUp() {
+        driver.close();
+        // driver.quit();
+    }
 
     //helper methods
     public void clickOnElement(String locator) {
@@ -189,72 +192,22 @@ public class WebAPI {
     public void navigateBack() {
         driver.navigate().back();
     }
-    public void navigateTo(String url) {
-        driver.navigate().to(url);
-    }
 
-    public void navigateForward() {
-        driver.navigate().forward();
-    }
-    public void navigateRefresh() {
-        driver.navigate().refresh();
-    }
+    public static void captureScreenshot(WebDriver driver, String screenshotName) {
+        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        Date date = new Date();
+        df.format(date);
 
-    public String getCurrentUrl() {
-        String url = driver.getCurrentUrl();
-        return url;
-    }
-
-    public void getTitle() {
-        driver.getTitle();
-    }
-
-
-
-    public static String captureScreenshot(WebDriver driver, String screenshotName) throws IOException {
-//        DateFormat df = new SimpleDateFormat("(MM-dd-yyyy-HH:mma)");
-//        Date date = new Date();
-//
-//        System.setProperty("current.date",date.toString().replace(" ","_").replace(":","_"));
-//        df.format(date);
-//        //Date d = new Date();
-//
-//
-//        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        try {
-//            FileUtils.copyFile(file,
-//                    new File(System.getProperty("user.dir") + "/Screenshots/" + screenshotName + " " + df.format(date) + ".png"));
-//            System.out.println("Screenshot captured");
-//        } catch (Exception e) {
-//            System.out.println("Exception while taking screenshot " + e.getMessage());
-//        }
-
-
-        //create a string variable which will be unique always
-        String df = new SimpleDateFormat("yyyyMMddhhss").format(new Date());
-
-        //create object variable of TakeScreenshot class
-        TakesScreenshot ts = (TakesScreenshot)driver;
-
-        //create File object variable which holds the screen shot reference
-        File source = ts.getScreenshotAs(OutputType.FILE);
-
-        //store the screen shot path in path variable. Here we are storing the screenshots under screenshots folder
-        String path = System.getProperty("user.dir") + "/Screenshots/" + screenshotName + df + ".png";
-
-        //create another File object variable which points(refer) to the above stored path variable
-        File destination = new File(path);
-
-        //use FileUtils class method to save the screen shot at desired path
-        FileUtils.copyFile(source, destination);
-
-        //return the path where the screen shot is saved
-        return path;
-
+        File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file,
+                    new File(System.getProperty("user.dir") + "/Screenshots/" + screenshotName + " " + df.format(date) + ".png"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            System.out.println("Exception while taking screenshot " + e.getMessage());
+        }
 
     }
-
-
 
     public static String convertToString(String st) {
         String splitString = "";
@@ -358,6 +311,10 @@ public class WebAPI {
     public String getCurrentPageUrl() {
         String url = driver.getCurrentUrl();
         return url;
+    }
+
+    public void navigateForward() {
+        driver.navigate().forward();
     }
 
     public String getTextByCss(String locator) {
@@ -551,9 +508,10 @@ public class WebAPI {
         }
     }
 
-    //  By Using FindBY@ Web Elements for Page objects
     public void inputValueInTextBoxByWebElement(WebElement webElement, String value) {
+
         webElement.sendKeys(value + Keys.ENTER);
+
     }
 
     public void clearInputBox(WebElement webElement) {

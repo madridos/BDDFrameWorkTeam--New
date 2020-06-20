@@ -9,6 +9,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user is landed in aetna home page",
   "keyword": "Given "
@@ -23,8 +26,10 @@ formatter.step({
   "name": "user should be able to click on login",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "step_definitions.HomePgStepDefinitions.user_should_be_able_to_click_on_login()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 });

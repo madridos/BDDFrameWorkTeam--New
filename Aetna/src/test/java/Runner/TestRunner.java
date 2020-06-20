@@ -7,13 +7,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"/Users/aghilesboutaleb/IdeaProjects/BDDTeam2FrameWork/Aetna/src/main/java/features"},
+        features = {"src/main/java/features"},
         glue = "step_definitions",
-        plugin = {"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"}
-//   ,     strict = true,
-//        monochrome = true,
-//        dryRun = false,
-//////        tags = " (@SmokeTest or @Regression) and not @pending"
+        plugin = {"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"},
+       strict = true,
+        monochrome = true,
+        dryRun = false,
+        tags =""
+               // " (@SmokeTest or @Regression) and not @pending"
 ////        tags = "(@SmokeTest or @Regression) and (not @pending)"
 //////        tags = {"@SmokeTest or @Regression and not @pending"}
 //

@@ -1,20 +1,20 @@
 package home;
 
+
 import common.WebAPI;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import webelements.HomePageWebElement;
 
+import static home.WebElement.*;
 
-public class HomePgFindBy extends HomePageWebElement {
+public class HomePgFindBy extends WebAPI {
+    public static HomePgFindBy homePgFindBy;
+ public static void init(){
+     homePgFindBy= PageFactory.initElements(driver,HomePgFindBy.class);
 
+ }
+ public static void setLoginbtn(){
+     clickOnElement(loginXp,driver);
 
-@FindBy(how=How.XPATH,using=LoginXpath)
-    public WebElement login;
-public void clickLogin(){
-    login.click();
-}
+ }
 
 }
