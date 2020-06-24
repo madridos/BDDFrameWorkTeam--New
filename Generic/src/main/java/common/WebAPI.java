@@ -39,7 +39,7 @@ public class WebAPI {
 
     @Before
     public  void openBrowser() throws IOException {
-        setUp(false,"browserstack","os","x","chrome","83","https://www.aetna.com/");
+        setUp(false,"browserstack","os","10","chrome","83","https://www.aetna.com/");
 
     }
 
@@ -60,7 +60,7 @@ public class WebAPI {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public WebDriver getLocalDriver( String OS, String browserName) {
@@ -119,7 +119,7 @@ public class WebAPI {
     @After
     public void cleanUp() {
         driver.close();
-        // driver.quit();
+         driver.quit();
     }
 
     //helper methods

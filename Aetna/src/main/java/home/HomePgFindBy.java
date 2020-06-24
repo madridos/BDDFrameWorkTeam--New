@@ -10,11 +10,6 @@ public class HomePgFindBy extends WebAPI {
     public static HomePgFindBy homePgFindBy;
  public static void init(){
      homePgFindBy= PageFactory.initElements(driver,HomePgFindBy.class);
-
- }
- public static void setLoginbtn(){
-     clickOnElement(loginXp,driver);
-
  }
 
 }

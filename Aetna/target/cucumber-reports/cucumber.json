@@ -1,0 +1,1141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-24T20:11:57.857Z",
+        "line": 5,
+        "name": "Aetna search test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-search-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7298166300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i am at the home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19946300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i click on search button",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 372311100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i should be able to enter and search",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_enter_and_search()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:05.650Z",
+        "line": 17,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6750099000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1995200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4475185000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"medicaid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"medicaid\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:16.885Z",
+        "line": 18,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6540185000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1992500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3505146600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"senior benefits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"senior benefits\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:26.936Z",
+        "line": 19,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6364818200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2009100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3403518500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"health insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"health insurance\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:36.713Z",
+        "line": 20,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6347005400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4003116600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"retirement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"retirement\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:47.069Z",
+        "line": 21,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6762078500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4248932000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"retirement plan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"retirement plan\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:12:58.092Z",
+        "line": 22,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7359765800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4091005600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"payments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"payments\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:13:09.552Z",
+        "line": 23,
+        "name": "search list of items test case",
+        "description": "",
+        "id": "aetna-home-page--feature;search-list-of-items-test-case;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6655111500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i am at the same home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_am_at_the_same_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on search field",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.i_click_on_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3923200900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should be able to search \"sign up\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sign up\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.HomePageStepDefinition.i_should_be_able_to_search(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:13:20.159Z",
+        "line": 25,
+        "name": "Aetna footer test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6386482100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user is at home page of aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_at_home_page_of_aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6961969500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user scrolls down to aetna apps",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_aetna_apps()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9913520200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user should be redirected to aetna apps page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_aetna_apps_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:13:43.424Z",
+        "line": 31,
+        "name": "Aetna footer2 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer2-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6555221700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user is at home page of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_at_home_page_of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7608573900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user scrolls down to Faqs",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_faqs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9531508600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user should be redirected to Faqs page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_Faqs_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:14:07.124Z",
+        "line": 37,
+        "name": "Aetna footer3 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer3-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6611608500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user is at home Page of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_at_home_Page_of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7312727900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user scrolls down to glossary",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_glossary()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9621102500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user should be redirected to glossary page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_glossary_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:14:30.673Z",
+        "line": 43,
+        "name": "Aetna footer4 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer4-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6939727000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user is at Home Page of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_at_Home_Page_of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7122517800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user scrolls down to accessibility serrvice",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_accessibility_serrvice()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9578170400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user should be redirected to accessibility service  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_accessibility_service_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:14:54.320Z",
+        "line": 49,
+        "name": "Aetna footer5 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer5-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6843588300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user is At Home Page of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_At_Home_Page_of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1473618000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user scrolls down to plan disclosure",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_plan_disclosure()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4363874700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user should be redirected to plan disclosure  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_plan_disclosure_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:15:07.005Z",
+        "line": 55,
+        "name": "Aetna footer6 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer6-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9553699600,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user is AT Home Page of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4030000200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user scrolls down to program provision",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_program_provision()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6579793600,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user should be redirected to program provision  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_program_provision_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:15:27.175Z",
+        "line": 61,
+        "name": "Aetna footer7 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer7-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6554292200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user is AT Home Page Of Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_Of_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4376806800,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user scrolls down to state directory",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_state_directory()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4686078400,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user should be redirected to state directory  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_state_directory_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:15:42.797Z",
+        "line": 67,
+        "name": "Aetna footer8 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer8-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13727051100,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user is AT Home Page OF Aetna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_OF_Aetna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4179729300,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user scrolls down to grieve Forms",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_grieve_Forms()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 267243300,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "user should be redirected to grieve Forms  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_grieve_Forms_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:16:00.979Z",
+        "line": 73,
+        "name": "Aetna footer9 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer9-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8477771000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user is AT Home Page OF AEtna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_OF_AEtna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4274691900,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user scrolls down to Health Care Reform",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_Health_Care_Reform()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53855800,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user should be redirected to Health Care Reform  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_Health_Care_Reform_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:16:13.791Z",
+        "line": 79,
+        "name": "Aetna footer10 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer10-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7680690000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user is AT Home Page OF AETna",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_OF_AETna()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6012828800,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user scrolls down to News And Analysis",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_News_And_Analysis()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2991800,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user should be redirected to News And Analysis  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_News_And_Analysis_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:16:27.493Z",
+        "line": 85,
+        "name": "Aetna footer11 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer11-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8153427700,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user is AT Home Page OF AETNa",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_OF_AETNa()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4088622700,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user scrolls down to investor Info",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_investor_Info()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6979900,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user should be redirected to investor Info  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_investor_Info_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:16:39.747Z",
+        "line": 91,
+        "name": "Aetna footer12 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer12-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6786342800,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user is AT Home Page OF AETNA",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_is_AT_Home_Page_OF_AETNA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4027158000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user scrolls down to site map",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_site_map()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48869200,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user should be redirected to site map  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_site_map_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:16:50.615Z",
+        "line": 97,
+        "name": "Aetna footer13 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer13-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6488587800,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user Is AT Home Page OF AETNA",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_Is_AT_Home_Page_OF_AETNA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3909858700,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "user scrolls down to terms of use",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_terms_of_use()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1311231100,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "user should be redirected to terms of use  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_terms_of_use_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:17:02.330Z",
+        "line": 103,
+        "name": "Aetna footer14 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer14-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7018552300,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "user IS AT Home Page OF AETNA",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_IS_AT_Home_Page_OF_AETNA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4041156600,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user scrolls down to legal notices",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_legal_notices()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 538070100,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user should be redirected to legal notices  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_legal_notices_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T20:17:13.932Z",
+        "line": 109,
+        "name": "Aetna footer15 test case",
+        "description": "",
+        "id": "aetna-home-page--feature;aetna-footer15-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7524769400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user IS AT Home PAge OF AETNA",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_IS_AT_Home_PAge_OF_AETNA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4090811700,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "user scrolls down to privacy center",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_scrolls_down_to_privacy_center()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45877100,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "user should be redirected to privacy center  page",
+            "match": {
+              "location": "step_definitions.HomePageStepDefinition.user_should_be_redirected_to_privacy_center_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Aetna home page  Feature",
+    "description": "",
+    "id": "aetna-home-page--feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/homePage.feature",
+    "tags": []
+  }
+]
