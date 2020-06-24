@@ -1,26 +1,19 @@
 package Runner;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src\\main\\java\\features"},
+        features = {"src\\main\\java\\features\\homePage.feature"},//{"src\\main\\java\\features"},
         glue = "step_definitions",
         plugin = {"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"},
-       strict = true,
+        strict = true,
         monochrome = true,
         dryRun = false,
-        tags =""
-               // " (@SmokeTest or @Regression) and not @pending"
-////        tags = "(@SmokeTest or @Regression) and (not @pending)"
-//////        tags = {"@SmokeTest or @Regression and not @pending"}
-//
-
+        tags ={""}
 )
+public class HomePageRunner {
 
-
-public class TestRunner {
 }
