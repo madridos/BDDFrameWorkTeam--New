@@ -1,0 +1,542 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-26T22:48:06.004Z",
+        "line": 5,
+        "name": "Citi bank home  logo",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home--logo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7837463200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is at citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_is_at_citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107693300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "logo should be visible",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.logo_should_be_visible()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1111052300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "when you click on it",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.when_you_click_on_it()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 577456500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "it should redirect you to the home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.it_should_redirect_you_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:48:15.711Z",
+        "line": 12,
+        "name": "Citi bank home search",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7075603100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user Is at citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_Is_at_citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1078342100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on  search icon",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_click_on_search_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 541552100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "it should drop a content menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.it_should_drop_a_content_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:48:24.416Z",
+        "line": 18,
+        "name": "Citi bank home search anything",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-search-anything",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7407603300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user IS at citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_at_citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5220842000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on  search icon and enters the keyword",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_click_on_search_icon_and_enters_the_keyword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21916500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should be redirected to the search page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_be_redirected_to_the_search_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:48:37.071Z",
+        "line": 24,
+        "name": "Citi bank home facebook",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7234075800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user IS At citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_At_citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9468505100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user scrolls down to facebook and clicks on it",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_scrolls_down_to_facebook_and_clicks_on_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15920000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should be redirected to citi facebook page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_be_redirected_to_citi_facebook_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:48:53.796Z",
+        "line": 30,
+        "name": "Citi bank home twitter",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-twitter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6479058400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user IS At Citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_At_Citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9296359800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user scrolls down to twitter and clicks on it",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_scrolls_down_to_twitter_and_clicks_on_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6924000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should be redirected to citi twitter page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_be_redirected_to_citi_twitter_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:49:09.582Z",
+        "line": 36,
+        "name": "Citi bank home youtube",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-youtube",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7531773100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user IS AT Citi bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_Citi_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9364778600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user scrolls down to youtube and clicks on it",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_scrolls_down_to_youtube_and_clicks_on_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5951800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user should be redirected to citi youtube page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_be_redirected_to_citi_youtube_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:49:26.500Z",
+        "line": 42,
+        "name": "Citi bank home credit cards",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-credit-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7757470200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user IS AT CIti bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_CIti_bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3220648700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user mouse hover to credit cards",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_mouse_hover_to_credit_cards()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3210172200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user should see drop down menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_see_drop_down_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:49:40.691Z",
+        "line": 48,
+        "name": "Citi bank home baking",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-baking",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7530096500,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User IS AT CIti Bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_CIti_Bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4625453800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user mouse hover to banking",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_mouse_hover_to_banking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3225772400,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user should see drop down banking menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_see_drop_down_banking_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:49:56.076Z",
+        "line": 54,
+        "name": "Citi bank home landing",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-landing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7794308200,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User IS AT CITi Bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_CITi_Bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3615192700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user mouse hover to landing",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_mouse_hover_to_landing()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3175341800,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user should see drop down landing menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_see_drop_down_landing_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:50:10.665Z",
+        "line": 60,
+        "name": "Citi bank home investing",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-investing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7607310800,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User IS AT CITI Bank home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_CITI_Bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3207942000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user mouse hover to investing",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_mouse_hover_to_investing()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3158943100,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user should see drop down investing menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_see_drop_down_investing_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T22:50:24.642Z",
+        "line": 66,
+        "name": "Citi bank home citi gold",
+        "description": "",
+        "id": "citi-bank-home-page--feature;citi-bank-home-citi-gold",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9311612600,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "User IS AT CITI BAnk home page",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_IS_AT_CITI_BAnk_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4828925900,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user mouse hover to citi gold",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_mouse_hover_to_citi_gold()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3180526800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user should see drop down citi gold menu",
+            "match": {
+              "location": "home.Ci_TiHomePageStepDefiniton.user_should_see_drop_down_citi_gold_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Citi Bank home page  Feature",
+    "description": "",
+    "id": "citi-bank-home-page--feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/citi-bank.feature",
+    "tags": []
+  }
+]

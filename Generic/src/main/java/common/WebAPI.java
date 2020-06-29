@@ -39,7 +39,7 @@ public class WebAPI {
 
     @Before
     public  void openBrowser() throws IOException {
-        setUp(false,"browserstack","os","10","chrome","83","https://www.aetna.com/");
+        setUp(false,"browserstack","os","10","chrome","83","https://online.citi.com/");
 
     }
 
@@ -522,6 +522,10 @@ public class WebAPI {
         String text = webElement.getText();
         return text;
     }
-
-
+    // Generic method for mouseHover:
+    public void mouseHoverWebElement(WebElement webElement) throws InterruptedException {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(webElement).build().perform();
+        Thread.sleep(3000);
+    }
 }
