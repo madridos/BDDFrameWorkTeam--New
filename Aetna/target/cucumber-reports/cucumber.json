@@ -1,0 +1,42 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-23T01:54:27.925Z",
+        "line": 2,
+        "name": "open an account test",
+        "description": "",
+        "id": "open-an-account-link;open-an-account-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "user lunch browser \"chrome\" and navigate to citi bank home page \"https://online.citi.com/\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user click on open an account",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "open an account link",
+    "description": "",
+    "id": "open-an-account-link",
+    "keyword": "Feature",
+    "uri": "file:///Users/aghilesboutaleb/IdeaProjects/BDDTeam2FrameWork/CitiBank/src/main/java/myfeatures/openaccount.feature",
+    "tags": []
+  }
+]

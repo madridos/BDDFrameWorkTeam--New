@@ -1,0 +1,42 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-23T02:13:04.558Z",
+        "line": 2,
+        "name": "hartford auto functionallity",
+        "description": "",
+        "id": "hartford-home-page;hartford-auto-functionallity",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "iam at hartford home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "as user i want to to click on auto",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "hartford home page",
+    "description": "",
+    "id": "hartford-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/harford.feature",
+    "tags": []
+  }
+]

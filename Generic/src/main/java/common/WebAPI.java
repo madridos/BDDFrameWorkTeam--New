@@ -39,7 +39,7 @@ public class WebAPI {
 
     @Before
     public  void openBrowser() throws IOException {
-        setUp(false,"browserstack","os","x","chrome","83","https://www.aetna.com/");
+        setUp(false,"browserstack","os","x","chrome","83","https://online.citi.com/US/login.do");
 
     }
 
@@ -63,13 +63,13 @@ public class WebAPI {
         //driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver( String OS, String browserName) {
+    public  WebDriver getLocalDriver( String OS, String browserName) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "BrowserDriver\\windows\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("chrome-options")) {

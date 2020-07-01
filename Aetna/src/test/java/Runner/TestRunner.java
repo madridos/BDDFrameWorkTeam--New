@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/main/java/features"},
-        glue = "step_definitions",
+        features = {"/Users/aghilesboutaleb/IdeaProjects/BDDTeam2FrameWork/CitiBank/src/main/java/myfeatures"},
+        glue = "stepdefiniftion",
         plugin = {"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"},
        strict = true,
         monochrome = true,
@@ -18,9 +18,6 @@ import org.junit.runner.RunWith;
 ////        tags = "(@SmokeTest or @Regression) and (not @pending)"
 //////        tags = {"@SmokeTest or @Regression and not @pending"}
 //
-
 )
-
-
 public class TestRunner {
 }
